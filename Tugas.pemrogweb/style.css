@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: hsla(36, 100%, 29%, 0.379);
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    background: #3a1600;;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #fcd7c0 3px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+/* Bagian Hero */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: #3a1600eb;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsif untuk layar keci;*/
+@media (max-width:780px){
+    header.container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul{
+        padding-top: 10px;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .layanan-list{
+        flex-direction: column;
+    }
+}
+    
+
+section {
+    text-align: justify;
+    padding: 60px 0;
+    border-bottom: #000000 1px solid;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.layanan-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.layanan-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    background: #3a1600;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: #0779e4 3px solid;
+}
+
